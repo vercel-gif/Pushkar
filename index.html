@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PUSHKAR RAJ THAKUR | Free Telegram</title>
+  <meta name="description" content="Fast & Accurate Market Analysis - Nifty, Bank Nifty, Options Trading">
+
+  <!-- ================= META PIXEL ================= -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+
+  fbq('init', '1848020096610369');
+  fbq('track', 'PageView');
+  </script>
+
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1848020096610369&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- =============== END META PIXEL =============== -->
+
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at 50% 0%, #063d36 0%, #031b18 28%, #020b0a 65%, #010505 100%);
+      color: #ffffff;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 520px;
+      margin: auto;
+      padding: 35px 18px 45px;
+      text-align: center;
+    }
+
+    /* Profile */
+    .profile-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .profile {
+      width: 125px;
+      height: 125px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #19f5b5;
+      box-shadow:
+        0 0 15px #19f5b5,
+        0 0 35px rgba(25,245,181,0.45);
+      background: #071714;
+    }
+
+    /* Heading */
+    h1 {
+      font-size: 32px;
+      line-height: 1.1;
+      font-weight: 900;
+      letter-spacing: 1px;
+      color: #ffffff;
+      text-shadow: 0 0 12px rgba(25,245,181,0.35);
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 17px;
+      color: #19f5b5;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      color: #d0dedb;
+      font-size: 14px;
+      margin-bottom: 25px;
+    }
+
+    /* Stats */
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 9px;
+      margin-bottom: 20px;
+    }
+
+    .stat-card {
+      background: rgba(8, 31, 27, 0.85);
+      border: 1px solid rgba(25,245,181,0.35);
+      border-radius: 13px;
+      padding: 15px 5px;
+      box-shadow: 0 0 15px rgba(25,245,181,0.08);
+    }
+
+    .stat-number {
+      display: block;
+      color: #19f5b5;
+      font-size: 18px;
+      font-weight: 900;
+      margin-bottom: 5px;
+    }
+
+    .stat-text {
+      font-size: 10px;
+      color: #d8e4e1;
+      font-weight: 700;
+    }
+
+    /* Features */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      margin-bottom: 25px;
+    }
+
+    .feature {
+      background: linear-gradient(
+        145deg,
+        rgba(8, 35, 30, 0.95),
+        rgba(3, 18, 16, 0.95)
+      );
+      border: 1px solid rgba(25,245,181,0.28);
+      border-radius: 14px;
+      padding: 17px 10px;
+      transition: 0.2s;
+    }
+
+    .feature:hover {
+      transform: translateY(-2px);
+      border-color: #19f5b5;
+      box-shadow: 0 0 18px rgba(25,245,181,0.18);
+    }
+
+    .feature-icon {
+      font-size: 25px;
+      margin-bottom: 7px;
+    }
+
+    .feature-title {
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .feature-sub {
+      font-size: 10px;
+      color: #8fa7a1;
+      margin-top: 4px;
+    }
+
+    /* CTA */
+    .join-btn {
+      display: block;
+      width: 100%;
+      border: none;
+      outline: none;
+      text-decoration: none;
+      cursor: pointer;
+
+      background: linear-gradient(90deg, #16e8aa, #26f4c0);
+      color: #00110d;
+
+      padding: 18px 15px;
+      border-radius: 14px;
+
+      font-size: 17px;
+      font-weight: 900;
+      letter-spacing: 0.4px;
+
+      box-shadow:
+        0 0 15px rgba(25,245,181,0.45),
+        0 0 35px rgba(25,245,181,0.18);
+
+      transition: 0.2s;
+    }
+
+    .join-btn:hover {
+      transform: scale(1.02);
+      box-shadow:
+        0 0 20px rgba(25,245,181,0.65),
+        0 0 45px rgba(25,245,181,0.25);
+    }
+
+    .small-text {
+      color: #839993;
+      font-size: 11px;
+      margin-top: 14px;
+      line-height: 1.5;
+    }
+
+    .footer {
+      margin-top: 25px;
+      color: #526762;
+      font-size: 10px;
+    }
+
+    @media (max-width: 380px) {
+      h1 {
+        font-size: 27px;
+      }
+
+      .profile {
+        width: 110px;
+        height: 110px;
+      }
+
+      .stat-number {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <div class="container">
+
+    <!-- PROFILE IMAGE -->
+    <div class="profile-wrapper">
+      <img
+        src="profile.jpg"
+        alt="Pushkar Raj Thakur"
+        class="profile"
+      >
+    </div>
+
+
+    <!-- HEADING -->
+    <h1>PUSHKAR RAJ THAKUR</h1>
+
+    <div class="subtitle">
+      Fast &amp; Accurate Market Analysis
+    </div>
+
+    <div class="description">
+      Nifty • Bank Nifty • Options Trading
+    </div>
+
+
+    <!-- STATS -->
+    <div class="stats">
+
+      <div class="stat-card">
+        <span class="stat-number">10K+</span>
+        <span class="stat-text">MEMBERS</span>
+      </div>
+
+      <div class="stat-card">
+        <span class="stat-number">SEBI</span>
+        <span class="stat-text">REGISTERED</span>
+      </div>
+
+      <div class="stat-card">
+        <span class="stat-number">FREE</span>
+        <span class="stat-text">JOIN</span>
+      </div>
+
+    </div>
+
+
+    <!-- FEATURES -->
+    <div class="features">
+
+      <div class="feature">
+        <div class="feature-icon">📈</div>
+        <div class="feature-title">Nifty Calls</div>
+        <div class="feature-sub">Market Analysis</div>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">🏦</div>
+        <div class="feature-title">Bank Nifty</div>
+        <div class="feature-sub">Live Updates</div>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">⚡</div>
+        <div class="feature-title">Finnifty</div>
+        <div class="feature-sub">Trading Setups</div>
+      </div>
+
+      <div class="feature">
+        <div class="feature-icon">💹</div>
+        <div class="feature-title">Swing Trades</div>
+        <div class="feature-sub">Smart Opportunities</div>
+      </div>
+
+    </div>
+
+
+    <!-- TELEGRAM CTA -->
+    <a
+      href="https://telegram.dog/+u0NflBAgxcgxYzg1"
+      class="join-btn"
+      onclick="fbq('track', 'Lead');"
+    >
+      🚀 JOIN TELEGRAM FREE
+    </a>
+
+    <div class="small-text">
+      Join our Telegram community for market updates,
+      analysis and trading insights.
+    </div>
+
+    <div class="footer">
+      © 2026 Pushkar Raj Thakur
+    </div>
+
+  </div>
+
+
+  <!-- Prevent accidental duplicate Lead from rapid clicks -->
+  <script>
+    document.querySelector('.join-btn').addEventListener('click', function () {
+      this.style.opacity = '0.85';
+    });
+  </script>
+
+</body>
+</html>
